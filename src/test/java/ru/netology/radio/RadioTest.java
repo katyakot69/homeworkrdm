@@ -16,9 +16,9 @@ public class RadioTest {
                 "5, 9, 9",
                 "6, 10, 0",
         })
-      public void setSelectStation(String nameTest, int inputSelectStation, int expectedStation) {
+      public void setSelectStation(String nameTest, int inputCurrentStation, int expectedStation) {
             Radio radio = new Radio();
-            radio.setSelectStation(inputSelectStation);
+            radio.setCurrentStation(inputCurrentStation);
             Assertions.assertEquals(radio.getCurrentStation(), expectedStation);
         }
 

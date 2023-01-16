@@ -4,15 +4,13 @@ package ru.netology.radio;
 public class Radio {
     private int currentStation;
     private int currentVolume;
+
     public int getCurrentStation() {
         return currentStation;
     }
 
-    public void setCurrentStation(int currentStation) {
-        this.currentStation = currentStation;
-    }
 
-    public void setSelectStation(int selectStation) {
+    public void setCurrentStation(int selectStation) {
         if (selectStation < 0 || selectStation > 9) {
             return;
         }
